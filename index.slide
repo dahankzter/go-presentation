@@ -1,0 +1,53 @@
+All your services are belong to Go!
+10:00 15 Sept 2013
+Tags: services, scalable, simple, safe
+
+Henrik Johansson
+RedPill Linpro
+@dahankzter
+
+* State of the world
+
+- Java is abundant
+- Java is hard, yes it is
+- App server V2.0.x
+- Slow builds
+
+* Interfaces
+
+* No generics!
+
+- yet...
+
+* Concurrency done right - don't thread yourself!
+
+.play examples/concurrency.go
+
+* Channel the force!
+
+- Channels enables safe message passing
+- Channels can send channels - extremely powerful!
+
+* Unit testing in Java - Sitebricks Core (6 sec)
+
+- No support from core tools - JUnit, TestNG etc.
+- mvn clean install -am -pl :sitebricks 
+
+* unit test in Java - Sitebricks Core
+.code  examples/RegexNegotiatorTest.java /@Test/,/^}/
+
+* Unit testing in Go
+
+- Integrated in the core tools
+- Tests defined in complementary file "mycode_test.go"
+- go test -v
+- Benchmarking support built in!
+- go test -bench=. (runs all benchmarks in the current directory)
+
+* Unit test in Go - Gorilla Mux
+
+.code examples/mux_test.go /func TestNamedRoutes/,/^}/
+
+* Service applications
+
+* Known users
