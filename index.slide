@@ -15,6 +15,11 @@ RedPill Linpro
 
 * Interfaces
 
+- A set of methods is defined for an interface
+- If a type has these methods it implements the interface, no need to declare it
+
+.play examples/interfaces.go 
+
 * No generics!
 
 - yet...
