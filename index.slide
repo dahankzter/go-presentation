@@ -13,6 +13,18 @@ RedPill Linpro
 - App server V2.0.x
 - Slow builds
 
+* What is Go?
+
+Features:
+
+- Native code generation (compiled)
+- Statically typed
+- Memory safe
+- Garbage collected
+- Native concurrency support
+- Excellent standard library
+- Great tools
+
 * Interfaces
 
 - A set of methods is defined for an interface
@@ -37,6 +49,16 @@ RedPill Linpro
 
 - No support from core tools - JUnit, TestNG etc.
 - mvn clean install -am -pl :sitebricks 
+
+* GoDoc - Document your code
+
+- Godoc comments are just good comments, the sort you would want to read even if godoc didn't exist.
+
+.code examples/doc.go
+
+* GoDoc - Magic!
+
+.image img/godoc.png
 
 * unit test in Java - Sitebricks Core
 .code  examples/RegexNegotiatorTest.java /@Test/,/^}/
