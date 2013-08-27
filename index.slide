@@ -3,6 +3,7 @@ All your services are belong to Go!
 Tags: services, scalable, simple, safe
 
 Henrik Johansson
+(Fredrik Steen)
 RedPill Linpro
 @dahankzter
 
@@ -15,7 +16,7 @@ RedPill Linpro
 
 * What is Go?
 
-Features:
+.image img/gopher.png 180 320
 
 - Native code generation (compiled)
 - Statically typed
@@ -30,7 +31,15 @@ Features:
 - A set of methods is defined for an interface
 - If a type has these methods it implements the interface, no need to declare it
 
-.play examples/interfaces.go 
+.code examples/interfaces2.go /^type Animal/,/^}/
+.code examples/interfaces2.go /^type Cat/,/^}/
+
+- Any type that defines method Speak() satify the Animal interface.
+- No implements keyword in Go.
+
+* Interfaces
+
+.play examples/interfaces2.go /START OMIT/,/END OMIT/
 
 * No generics!
 
@@ -48,7 +57,7 @@ Features:
 * Unit testing in Java - Sitebricks Core (6 sec)
 
 - No support from core tools - JUnit, TestNG etc.
-- mvn clean install -am -pl :sitebricks 
+- mvn clean install -am -pl :sitebricks
 
 * GoDoc - Document your code
 
