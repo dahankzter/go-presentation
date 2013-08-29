@@ -30,6 +30,7 @@ RedPill Linpro
 
 - A set of methods is defined for an interface
 - If a type has these methods it implements the interface, no need to declare it
+- The compile checks that the interfaces are fullfilled
 
 .code examples/interfaces2.go /^type Animal/,/^}/
 .code examples/interfaces2.go /^type Cat/,/^}/
@@ -43,16 +44,22 @@ RedPill Linpro
 
 * No generics!
 
-- yet...
+- Current implementations deemed insufficient or overly complex
+- Interfaces cover many use cases and slices and channels are generic
+- The empty inteface can be used with reflection if you have to create generic types
 
-* Concurrency done right - don't thread yourself!
+.code examples/interfaces.go /EMPTYIFSTART/,/EMPTYIFSTOP/
+
+* Concurrency done right - don't thread on me!
 
 .play examples/concurrency.go
 
 * Channel the force!
 
-- Channels enables safe message passing
-- Channels can send channels - extremely powerful!
+- Borrows heavily from Unix pipes
+- Form together with goroutines a CSP - _Communicating_Sequential_Processes_
+- Using channels you can send data to other parts of a program in a controlled manner
+- Channels are not magic, you can even send them on channels which can be very powerful!
 
 * Unit testing in Java - Sitebricks Core (6 sec)
 
