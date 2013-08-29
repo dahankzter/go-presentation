@@ -3,6 +3,7 @@ All your services are belong to Go!
 Tags: services, scalable, simple, safe
 
 Henrik Johansson
+(Fredrik Steen)
 RedPill Linpro
 @dahankzter
 
@@ -13,12 +14,32 @@ RedPill Linpro
 - App server V2.0.x
 - Slow builds
 
+* What is Go?
+
+.image img/gopher.png 180 320
+
+- Native code generation (compiled)
+- Statically typed
+- Memory safe
+- Garbage collected
+- Native concurrency support
+- Excellent standard library
+- Great tools
+
 * Interfaces
 
 - A set of methods is defined for an interface
 - If a type has these methods it implements the interface, no need to declare it
 
-.play examples/interfaces.go 
+.code examples/interfaces2.go /^type Animal/,/^}/
+.code examples/interfaces2.go /^type Cat/,/^}/
+
+- Any type that defines method Speak() satify the Animal interface.
+- No implements keyword in Go.
+
+* Interfaces
+
+.play examples/interfaces2.go /START OMIT/,/END OMIT/
 
 * No generics!
 
@@ -36,7 +57,17 @@ RedPill Linpro
 * Unit testing in Java - Sitebricks Core (6 sec)
 
 - No support from core tools - JUnit, TestNG etc.
-- mvn clean install -am -pl :sitebricks 
+- mvn clean install -am -pl :sitebricks
+
+* GoDoc - Document your code
+
+- Godoc comments are just good comments, the sort you would want to read even if godoc didn't exist.
+
+.code examples/doc.go
+
+* GoDoc - Magic!
+
+.image img/godoc.png
 
 * unit test in Java - Sitebricks Core
 .code  examples/RegexNegotiatorTest.java /@Test/,/^}/
