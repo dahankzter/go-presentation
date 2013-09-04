@@ -57,7 +57,7 @@ RedPill Linpro
 * Channel the force!
 
 - Borrows heavily from Unix pipes
-- Form together with goroutines a CSP - _Communicating_Sequential_Processes_
+- Form together with goroutines a [[http://www.usingcsp.com/cspbook.pdf][CSP - Communicating Sequential Processes]]
 - Using channels you can send data to other parts of a program in a controlled manner
 - Channels are not magic, you can even send them on channels which can be very powerful!
 
