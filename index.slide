@@ -112,4 +112,69 @@ This is all part of the standard library!
 
 .play examples/simpleservice.go /func handler/,/^}/
 
+* Go was built for this...
+
+Google services rely heavily on this type of design although the complexity can be somewhat higher...
+
+Simple, performant and very little fuss to get it rolling.
+
+What about messaging?
+
+Do we need messaging in todays NoSQL times?
+
+Well, yes. Messaging has its very important use cases and there are many types of applications that can benefit tremendously from messaging.
+
+- Background processing
+- Notification systems (why poll?)
+
+* NSQ - Bitly
+
+- Brokerless, distributed and decentralized topologies without single points of failure
+- Fault tolerance and high availability coupled with a reliable message delivery guarantee
+- It provides _at_least_once_ semantics for delivery
+- It provides _no_ordering_ between messages. If you need ordering you have to provide some other means to enuser it. (Much like JMS...)
+- Implemented in Go but has various bindings for other languages
+
+* AMQP - RabbitMQ
+
+- Broker model that can be clustered
+- Stable software that has been around for some time
+- Quite similar to JMS in it's idea
+- RabbitMQ quite popular in the _scalable_everything_world_ for some reason. Erlang has it's problems...
+- Go has a client for it
+
+ go get github.com/streadway/amqp
+
+* Various other options
+
+- Beanstalk
+- MongoDB - Decent queue although it is pull based
+- Redis has excellent pub/sub support
+- ZeroMQ (nanomsg) if you are not afraid to get your hands dirty
+- NoSQL flavor of the day probably works to various degree...
+
+* Persistence SQL
+
+- Go has an SQL interface in the standard library 
+
+ import "database/sql"
+
+- _Drivers_ for various vendors exist
+- Postgres, multiple options but _https://github.com/lib/pq_ is probably best
+- MySQL, several options available
+- DB2
+- Oracle (wraps oci8)
+- ODBC
+- Several _ORM_ solutions available but generally the save little time depending on your use case of course
+
+* Persistence NoSQL
+
+- MongoDB, excellent driver _mgo_
+- Redis, at least a handful of clients
+- Memcache, both client _and_server_! Memcache creator _Brad_Fitzpatrick_ is on the Go core team
+- Groupcache, github.com/golang/groupcache by _Brad_Fitzpatrick_ now powers all downloads from Google
+- CouchDB
+- Cassandra
+- Riak
+
 * Known users
