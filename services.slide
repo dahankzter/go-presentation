@@ -3,9 +3,12 @@ All your services are belong to Go!
 Tags: services, scalable, simple, safe
 
 Henrik Johansson
-(Fredrik Steen)
-RedPill Linpro
+Redpill Linpro
 @dahankzter
+
+Fredrik Steen
+Redpill Linpro
+
 
 * State of the world
 
@@ -178,3 +181,12 @@ Well, yes. Messaging has its very important use cases and there are many types o
 - Riak
 
 * Known users
+
+- Google _of_course_ - dl.google.com, Vitesse enables Youtube to use MySQL
+- Appengine support
+- Soundcloud
+- IronIO
+- Ubuntu
+- docker.io
+- Heroku
+- Stathat
