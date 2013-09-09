@@ -54,17 +54,12 @@ RedPill Linpro
 
 .play examples/concurrency.go
 
-* Channel the force!
+* Channels - high level building blocks
 
 - Borrows heavily from Unix pipes
 - Form together with goroutines a CSP - _Communicating_Sequential_Processes_
 - Using channels you can send data to other parts of a program in a controlled manner
 - Channels are not magic, you can even send them on channels which can be very powerful!
-
-* Unit testing in Java - Sitebricks Core (6 sec)
-
-- No support from core tools - JUnit, TestNG etc.
-- mvn clean install -am -pl :sitebricks
 
 * GoDoc - Document your code
 
@@ -76,9 +71,6 @@ RedPill Linpro
 
 .image img/godoc.png
 
-* unit test in Java - Sitebricks Core
-.code  examples/RegexNegotiatorTest.java /@Test/,/^}/
-
 * Unit testing in Go
 
 - Integrated in the core tools
@@ -86,11 +78,38 @@ RedPill Linpro
 - go test -v
 - Benchmarking support built in!
 - go test -bench=. (runs all benchmarks in the current directory)
+- There are external libraries as well 
+  
+  gocheck - Fluent API
+  gomock  - Mocking
 
 * Unit test in Go - Gorilla Mux
 
 .code examples/mux_test.go /func TestNamedRoutes/,/^}/
 
 * Service applications
+What constitutes a service is debatable but there are some things that at least principally belong.
+
+- Messaging 
+- Transports (HTTP, WebSockets, AMQP, bittorent, ...)
+- Serialization (Protobuf, JSON, XML, ...)
+- Persistence (DB, files, cloud, ...)
+- Transactions
+
+* A simple service
+
+There is very little code needed to set up an HTTP server.
+
+.code examples/simpleservice.go /func main/,/^}/
+
+One or several handler functions is all that is needed.
+
+The handler functions are dispatched to based on the path of the request.
+
+This is all part of the standard library!
+
+* Let's have a little logic and load some data from the DB...
+
+.play examples/simpleservice.go /func handler/,/^}/
 
 * Known users
