@@ -60,7 +60,7 @@ Redpill Linpro
 * Channels - high level building blocks
 
 - Borrows heavily from Unix pipes
-- Form together with goroutines a CSP - _Communicating_Sequential_Processes_
+- Form together with goroutines a [[http://www.usingcsp.com/cspbook.pdf][CSP - Communicating Sequential Processes]]
 - Using channels you can send data to other parts of a program in a controlled manner
 - Channels are not magic, you can even send them on channels which can be very powerful!
 
@@ -81,8 +81,8 @@ Redpill Linpro
 - go test -v
 - Benchmarking support built in!
 - go test -bench=. (runs all benchmarks in the current directory)
-- There are external libraries as well 
-  
+- There are external libraries as well
+
   gocheck - Fluent API
   gomock  - Mocking
 
@@ -93,7 +93,7 @@ Redpill Linpro
 * Service applications
 What constitutes a service is debatable but there are some things that at least principally belong.
 
-- Messaging 
+- Messaging
 - Transports (HTTP, WebSockets, AMQP, bittorent, ...)
 - Serialization (Protobuf, JSON, XML, ...)
 - Persistence (DB, files, cloud, ...)
@@ -158,7 +158,7 @@ Well, yes. Messaging has its very important use cases and there are many types o
 
 * Persistence SQL
 
-- Go has an SQL interface in the standard library 
+- Go has an SQL interface in the standard library
 
  import "database/sql"
 
