@@ -38,7 +38,7 @@ Redpill Linpro
 .code examples/interfaces2.go /^type Animal/,/^}/
 .code examples/interfaces2.go /^type Cat/,/^}/
 
-- Any type that defines method Speak() satify the Animal interface.
+- Any type that defines method Speak() satisfy the Animal interface.
 - No implements keyword in Go.
 
 * Interfaces
