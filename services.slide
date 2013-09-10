@@ -38,7 +38,7 @@ Redpill Linpro
 .code examples/interfaces2.go /^type Animal/,/^}/
 .code examples/interfaces2.go /^type Cat/,/^}/
 
-- Any type that defines method Speak() satify the Animal interface.
+- Any type that defines method Speak() satisfy the Animal interface.
 - No implements keyword in Go.
 
 * Interfaces
@@ -49,7 +49,7 @@ Redpill Linpro
 
 - Current implementations deemed insufficient or overly complex
 - Interfaces cover many use cases and slices and channels are generic
-- The empty inteface can be used with reflection if you have to create generic types
+- The empty interface can be used with reflection if you have to create generic types
 
 .code examples/interfaces.go /EMPTYIFSTART/,/EMPTYIFSTOP/
 
@@ -60,9 +60,11 @@ Redpill Linpro
 * Channels - high level building blocks
 
 - Borrows heavily from Unix pipes
-- Form together with goroutines a CSP - _Communicating_Sequential_Processes_
+- Form together with goroutines a [[http://www.usingcsp.com/cspbook.pdf][CSP - Communicating Sequential Processes]]
 - Using channels you can send data to other parts of a program in a controlled manner
 - Channels are not magic, you can even send them on channels which can be very powerful!
+
+.code examples/chan.go
 
 * GoDoc - Document your code
 
@@ -81,8 +83,8 @@ Redpill Linpro
 - go test -v
 - Benchmarking support built in!
 - go test -bench=. (runs all benchmarks in the current directory)
-- There are external libraries as well 
-  
+- There are external libraries as well
+
   gocheck - Fluent API
   gomock  - Mocking
 
@@ -93,7 +95,7 @@ Redpill Linpro
 * Service applications
 What constitutes a service is debatable but there are some things that at least principally belong.
 
-- Messaging 
+- Messaging
 - Transports (HTTP, WebSockets, AMQP, bittorent, ...)
 - Serialization (Protobuf, JSON, XML, ...)
 - Persistence (DB, files, cloud, ...)
@@ -135,7 +137,7 @@ Well, yes. Messaging has its very important use cases and there are many types o
 - Brokerless, distributed and decentralized topologies without single points of failure
 - Fault tolerance and high availability coupled with a reliable message delivery guarantee
 - It provides _at_least_once_ semantics for delivery
-- It provides _no_ordering_ between messages. If you need ordering you have to provide some other means to enuser it. (Much like JMS...)
+- It provides _no_ordering_ between messages. If you need ordering you have to provide some other means to ensure it. (Much like JMS...)
 - Implemented in Go but has various bindings for other languages
 
 * AMQP - RabbitMQ
@@ -158,12 +160,12 @@ Well, yes. Messaging has its very important use cases and there are many types o
 
 * Persistence SQL
 
-- Go has an SQL interface in the standard library 
+- Go has an SQL interface in the standard library
 
  import "database/sql"
 
 - _Drivers_ for various vendors exist
-- Postgres, multiple options but _https://github.com/lib/pq_ is probably best
+- Postgres, multiple options but [[https://github.com/lib/pq]] is probably best
 - MySQL, several options available
 - DB2
 - Oracle (wraps oci8)
@@ -175,19 +177,19 @@ Well, yes. Messaging has its very important use cases and there are many types o
 - MongoDB, excellent driver _mgo_
 - Redis, at least a handful of clients
 - Memcache, both client _and_server_! Memcache creator _Brad_Fitzpatrick_ is on the Go core team
-- Groupcache, github.com/golang/groupcache by _Brad_Fitzpatrick_ now powers all downloads from Google
+- Groupcache, [[github.com/golang/groupcache]] by _Brad_Fitzpatrick_ now powers all downloads from Google
 - CouchDB
 - Cassandra
 - Riak
 
 * Known users
 
-- Google _of_course_ - dl.google.com, Vitesse enables Youtube to use MySQL
+- Google _of_course_ - [[http://talks.golang.org/2013/oscon-dl.slide#1][dl.google.com]], Vitesse enables Youtube to use MySQL
 - Appengine support
 - Soundcloud
-- IronIO
+- IronIO - [[http://blog.iron.io/2013/08/go-after-2-years-in-production.html][2 Years in Production]]
 - Ubuntu
-- docker.io
+- dotCloud, [[http://docker.io][docker.io]]
 - Heroku
 - Stathat
 - PayPal, a new hardware ARM based device
