@@ -165,7 +165,7 @@ Well, yes. Messaging has its very important use cases and there are many types o
  import "database/sql"
 
 - _Drivers_ for various vendors exist
-- Postgres, multiple options but _https://github.com/lib/pq_ is probably best
+- Postgres, multiple options but [[https://github.com/lib/pq]] is probably best
 - MySQL, several options available
 - DB2
 - Oracle (wraps oci8)
@@ -177,14 +177,14 @@ Well, yes. Messaging has its very important use cases and there are many types o
 - MongoDB, excellent driver _mgo_
 - Redis, at least a handful of clients
 - Memcache, both client _and_server_! Memcache creator _Brad_Fitzpatrick_ is on the Go core team
-- Groupcache, github.com/golang/groupcache by _Brad_Fitzpatrick_ now powers all downloads from Google
+- Groupcache, [[github.com/golang/groupcache]] by _Brad_Fitzpatrick_ now powers all downloads from Google
 - CouchDB
 - Cassandra
 - Riak
 
 * Known users
 
-- Google _of_course_ - dl.google.com, Vitesse enables Youtube to use MySQL
+- Google _of_course_ - [[http://talks.golang.org/2013/oscon-dl.slide#1][dl.google.com]], Vitesse enables Youtube to use MySQL
 - Appengine support
 - Soundcloud
 - IronIO
