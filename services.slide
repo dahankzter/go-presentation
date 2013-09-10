@@ -64,6 +64,8 @@ Redpill Linpro
 - Using channels you can send data to other parts of a program in a controlled manner
 - Channels are not magic, you can even send them on channels which can be very powerful!
 
+.code examples/chan.go
+
 * GoDoc - Document your code
 
 - Godoc comments are just good comments, the sort you would want to read even if godoc didn't exist.
