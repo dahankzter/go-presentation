@@ -49,7 +49,7 @@ Redpill Linpro
 
 - Current implementations deemed insufficient or overly complex
 - Interfaces cover many use cases and slices and channels are generic
-- The empty inteface can be used with reflection if you have to create generic types
+- The empty interface can be used with reflection if you have to create generic types
 
 .code examples/interfaces.go /EMPTYIFSTART/,/EMPTYIFSTOP/
 
