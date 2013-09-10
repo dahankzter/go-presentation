@@ -184,8 +184,9 @@ Well, yes. Messaging has its very important use cases and there are many types o
 
 * Known users
 
-- Google _of_course_ - [[http://talks.golang.org/2013/oscon-dl.slide#1][dl.google.com]], Vitesse enables Youtube to use MySQL
-- Appengine support
+- Google _of_course_ - [[http://talks.golang.org/2013/oscon-dl.slide#1][dl.google.com]], Vitesse enables Youtube to use MySQL, Appengine
+- BBC, backends and games
+- Nokia
 - Soundcloud
 - IronIO - [[http://blog.iron.io/2013/08/go-after-2-years-in-production.html][2 Years in Production]]
 - Ubuntu
