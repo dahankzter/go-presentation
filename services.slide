@@ -137,7 +137,7 @@ Well, yes. Messaging has its very important use cases and there are many types o
 - Brokerless, distributed and decentralized topologies without single points of failure
 - Fault tolerance and high availability coupled with a reliable message delivery guarantee
 - It provides _at_least_once_ semantics for delivery
-- It provides _no_ordering_ between messages. If you need ordering you have to provide some other means to enuser it. (Much like JMS...)
+- It provides _no_ordering_ between messages. If you need ordering you have to provide some other means to ensure it. (Much like JMS...)
 - Implemented in Go but has various bindings for other languages
 
 * AMQP - RabbitMQ
