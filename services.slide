@@ -10,12 +10,13 @@ Fredrik Steen
 Redpill Linpro
 
 
-* State of the world
+* State of the server side world
 
-- Java is abundant
-- Java is hard, yes it is
-- App server V2.0.x
-- Slow builds
+- Software traditionally requires an application server
+- Software often takes a long time to build, both to _compile_ and to _write_
+- Lots of dependencies, both at _runtime_ and _compile_time_
+- Concurrency is either completely abstracted away as in the case of an _application_server_ or done completely by hand with _low_level_threads_
+- It is just _too_hard_and_too_weird_ to get stuff done...
 
 * What is Go?
 
