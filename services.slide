@@ -18,6 +18,12 @@ Redpill Linpro
 - Concurrency is either completely abstracted away as in the case of an _application_server_ or done completely by hand with _low_level_threads_
 - It is just _too_hard_and_too_weird_ to get stuff done...
 
+* Why something new?
+
+- Rob Pike, Ken Thompson, Robert Griesemer (C, Unix, UTF-8 och Plan 9, _heavy_hitters_...) 
+- Frustration with slow builds exploding dependencies
+- Bring the fun back into coding!
+
 * What is Go?
 
 .image img/gopher.png 180 320
